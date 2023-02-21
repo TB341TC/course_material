@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-def generate_synthetic_data(BETA_TIME, BETA_COSTS):
+def generate_synthetic_data(BETA_TIME, BETA_COST):
   df = pd.read_csv('https://raw.githubusercontent.com/TB341TC/course_material/main/ica_2_incomplete_synthetic_data.csv')
-  df['V_1'] = BETA_TIME * df['TIME_ROUTE_1'] + BETA_COSTS * df['COST_ROUTE_1']
-  df['V_2'] = BETA_TIME * df['TIME_ROUTE_2'] + BETA_COSTS * df['COST_ROUTE_2']
+  df['V_1'] = BETA_TIME * df['TIME_ROUTE_1'] + BETA_COST * df['COST_ROUTE_1']
+  df['V_2'] = BETA_TIME * df['TIME_ROUTE_2'] + BETA_COST * df['COST_ROUTE_2']
   df['e_1'] = np.random.gumbel(size=df.shape[0])
   df['e_2'] = np.random.gumbel(size=df.shape[0])
   df['U_1'] = df['V_1'] + df['e_1']
