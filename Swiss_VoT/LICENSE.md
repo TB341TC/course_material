@@ -1,1 +1,1 @@
-
+The work in this folder is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License and originates from ETH Zurich: https://app.data-archive.ethz.ch/delivery/DeliveryManagerServlet?dps_pid=IE27435126
